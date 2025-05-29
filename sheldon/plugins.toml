@@ -80,9 +80,9 @@ github = "onyxraven/zsh-saml2aws"
 [plugins.oh-my-kustomize]
 github = "ralgozino/oh-my-kustomize"
 
-[plugins.kubectl_fzf]
-remote = "https://raw.githubusercontent.com/bonnefoa/kubectl-fzf/refs/heads/main/shell/kubectl_fzf.plugin.zsh"
-apply = ["PATH", "source"]
+# [plugins.kubectl_fzf]
+# remote = "https://raw.githubusercontent.com/bonnefoa/kubectl-fzf/refs/heads/main/shell/kubectl_fzf.plugin.zsh"
+# apply = ["PATH", "source"]
 
 # [plugins.autojump]
 # github = "wting/autojump"

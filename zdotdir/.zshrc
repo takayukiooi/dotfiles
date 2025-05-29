@@ -51,6 +51,7 @@ setopt HIST_BEEP              # Beep when accessing non-existent history.
 eval "$(dircolors --sh $HOME/.dir_colors(N))"
 
 #
-# kubectl
+# kubectl fzf
 #
 source <(kubectl completion zsh)
+source $ZDOTDIR/kubectl_fzf.plugin.zsh
