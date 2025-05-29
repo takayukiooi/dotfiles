@@ -61,3 +61,17 @@ fi
 # kubectl
 #
 source <(kubectl completion zsh)
+
+function _fzf_kubectl_pod_describe() {
+  local selection=`kubectl get pods -A | fzf --header-lines=1 --query="$*" --select-1 -e `
+  if [ $selection = "" ]; then
+    return 0
+  fi
+
+  local namespace=`echo $selection | awk '{ print $1 }'`
+  local pod=`echo $selection | awk '{ print $2 }'`
+
+  print -z "kubectl describe pod ${pod} -n ${namespace}"
+}
+
+alias kcdpod=_fzf_kubectl_pod_describe
