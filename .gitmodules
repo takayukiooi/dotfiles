@@ -1,0 +1,3 @@
+[submodule "wezterm-config"]
+	path = wezterm-config
+	url = https://github.com/renoinn/wezterm-config.git
