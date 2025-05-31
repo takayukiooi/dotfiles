@@ -46,16 +46,16 @@ setopt HIST_VERIFY            # Do not execute immediately upon history expansio
 setopt HIST_BEEP              # Beep when accessing non-existent history.
 
 #
-# ls
+# ls color if dont install eza
 #
-function is-callable {
-  (( $+commands[$1] || $+functions[$1] || $+aliases[$1] || $+builtins[$1] ))
-}
-if is-callable 'dircolors'; then
-  eval "$(dircolors --sh $HOME/.dir_colors(N))"
-else
-  export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
-fi
+# function is-callable {
+#   (( $+commands[$1] || $+functions[$1] || $+aliases[$1] || $+builtins[$1] ))
+# }
+# if is-callable 'dircolors'; then
+#   eval "$(dircolors --sh $HOME/.dir_colors(N))"
+# else
+#   export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
+# fi
 
 #
 # kubectl
