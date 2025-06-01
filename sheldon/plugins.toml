@@ -31,12 +31,14 @@ remote = "https://raw.githubusercontent.com/sorin-ionescu/prezto/refs/heads/mast
 
 [plugins.zsh-syntax-highlighting]
 github = "zsh-users/zsh-syntax-highlighting"
+apply = ["defer"]
 
 #
 # completion
 #
 [plugins.zsh-autosuggestions]
 github = "zsh-users/zsh-autosuggestions"
+apply = ["defer"]
 
 #
 # utility
@@ -46,15 +48,19 @@ github = "zpm-zsh/ls"
 
 [plugins.enhancd]
 github = "b4b4r07/enhancd"
+apply = ["defer"]
 
 [plugins.zsh-up-dir]
 github = "sgpthomas/zsh-up-dir"
+apply = ["defer"]
 
 [plugins.zsh-you-should-use]
 github = "MichaelAquilina/zsh-you-should-use"
+apply = ["defer"]
 
 [plugins.zsh-fzf-history-search]
 github = "joshskidmore/zsh-fzf-history-search"
+apply = ["defer"]
 
 
 #
@@ -62,15 +68,20 @@ github = "joshskidmore/zsh-fzf-history-search"
 #
 [plugins.zsh-git-fzf]
 github = "alexiszamanidis/zsh-git-fzf"
+apply = ["defer"]
 
 [plugins.zsh-terraform]
 github = "ptavares/zsh-terraform"
+apply = ["defer"]
 
 [plugins.docker-zsh-completion]
 github = "greymd/docker-zsh-completion"
+apply = ["defer"]
 
 [plugins.zsh-saml2aws]
 github = "onyxraven/zsh-saml2aws"
+apply = ["defer"]
 
 [plugins.oh-my-kustomize]
 github = "ralgozino/oh-my-kustomize"
+apply = ["defer"]
