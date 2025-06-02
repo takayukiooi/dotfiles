@@ -26,20 +26,19 @@ apply = ["source"]
 #
 # apperance
 #
-[plugins.zsh-256color]
-github = "chrissicool/zsh-256color"
+[plugins.prezto-spectrum]
+remote = "https://raw.githubusercontent.com/sorin-ionescu/prezto/refs/heads/master/modules/spectrum/init.zsh"
 
 [plugins.zsh-syntax-highlighting]
 github = "zsh-users/zsh-syntax-highlighting"
+apply = ["defer"]
 
 #
 # completion
 #
 [plugins.zsh-autosuggestions]
 github = "zsh-users/zsh-autosuggestions"
-
-[plugins.base16]
-github = "chriskempson/base16-shell"
+apply = ["defer"]
 
 #
 # utility
@@ -49,48 +48,40 @@ github = "zpm-zsh/ls"
 
 [plugins.enhancd]
 github = "b4b4r07/enhancd"
+apply = ["defer"]
 
 [plugins.zsh-up-dir]
 github = "sgpthomas/zsh-up-dir"
+apply = ["defer"]
 
 [plugins.zsh-you-should-use]
 github = "MichaelAquilina/zsh-you-should-use"
+apply = ["defer"]
 
 [plugins.zsh-fzf-history-search]
 github = "joshskidmore/zsh-fzf-history-search"
+apply = ["defer"]
 
-[plugins.prezto-spectrum]
-remote = "https://raw.githubusercontent.com/sorin-ionescu/prezto/refs/heads/master/modules/spectrum/init.zsh"
 
 #
 # dev tools
 #
 [plugins.zsh-git-fzf]
 github = "alexiszamanidis/zsh-git-fzf"
+apply = ["defer"]
 
 [plugins.zsh-terraform]
 github = "ptavares/zsh-terraform"
+apply = ["defer"]
 
 [plugins.docker-zsh-completion]
 github = "greymd/docker-zsh-completion"
+apply = ["defer"]
 
 [plugins.zsh-saml2aws]
 github = "onyxraven/zsh-saml2aws"
+apply = ["defer"]
 
 [plugins.oh-my-kustomize]
 github = "ralgozino/oh-my-kustomize"
-
-# [plugins.kubectl_fzf]
-# remote = "https://raw.githubusercontent.com/bonnefoa/kubectl-fzf/refs/heads/main/shell/kubectl_fzf.plugin.zsh"
-# apply = ["PATH", "source"]
-
-# [plugins.autojump]
-# github = "wting/autojump"
-# dir = "bin"
-# apply = ["PATH", "source"]
-
-
-#[plugins.prezto-spectrum]
-#remote = "https://github.com/sorin-ionescu/prezto/blob/master/modules/spectrum/init.zsh"
-# For example:
-#
+apply = ["defer"]
